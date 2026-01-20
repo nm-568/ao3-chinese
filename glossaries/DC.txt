@@ -1,0 +1,44 @@
+// 元数据区
+版本号:1.3.1
+维护者:DC汉化组
+更新时间:2026-01-20
+
+词条
+[span_11](start_span)// 人名需词数对齐以实现自动拆分[span_11](end_span)
+Bruce Wayne = 布鲁斯 韦恩
+Clark Kent = 克拉克 肯特
+Diana Prince = 戴安娜 普林斯
+Barry Allen = 巴里 艾伦
+Dick Grayson = 迪克 格雷森
+Jason Peter Todd = 杰森 彼得 托德
+Tim Drake = 提姆 德雷克
+Damian Wayne = 达米安 韦恩
+Barbara Gordon = 芭芭拉 戈登
+Wally West = 沃利 韦斯特
+Conner Kent = 康纳 肯特
+
+Gotham City:哥谭市
+Arkham Asylum:阿卡姆疯人院
+Metropolis:大都会
+
+通用词条
+[span_12](start_span)// 不区分大小写，匹配 Batman, batman 等[span_12](end_span)
+Batman:蝙蝠侠
+Superman:超人
+Wonder Woman:神奇女侠
+The Flash:闪电侠
+Nightwing:夜翼
+Red Hood:红头罩
+Red Robin:红罗宾
+Batgirl:蝙蝠女
+Robin:罗宾
+Justice League:正义联盟
+Teen Titans:少年泰坦
+Young Justice:少年正义联盟
+
+禁翻词条
+DC, JLA, JSA, GCPD, ARGUS, STAR Labs
+
+正则表达式
+(Robin|Batgirl)\s(I+|V+):第$2代$1
+Bat(mobile|wing|boat|cave):蝙蝠$1
