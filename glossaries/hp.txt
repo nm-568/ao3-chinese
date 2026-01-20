@@ -1,26 +1,570 @@
-版本号：1.0.1
-维护者：V-Lipset
-更新时间：2025-09-22
+版本号:1.0.5
+维护者:HP汉化组
+更新时间:2025-09-27
 
-// 此区域区分大小写，用于翻译人名等专有名词
-词条
+// 词条（区分大小写，专名/人名/固定称谓，严格匹配）
+// 核心主角团+关键人物
 Harry Potter = 哈利 波特
+Hermione Jean Granger = 赫敏 简·格兰杰
+Ron Bilius Weasley = 罗恩 比利尔斯·韦斯莱
+Albus Percival Wulfric Brian Dumbledore = 阿不思·珀西瓦尔·伍尔弗里克·布赖恩·邓布利多
+Lord Voldemort = 伏地魔 汤姆·马沃罗·里德尔（Tom Marvolo Riddle）
 Severus Snape = 西弗勒斯 斯内普
-Hogwarts = 霍格沃茨
+Draco Malfoy = 德拉科 马尔福
+Neville Longbottom = 纳威 隆巴顿
+Ginny Weasley = 金妮 韦斯莱
+Luna Lovegood = 卢娜 洛夫古德
+Cho Chang = 秋 张
+Fred Weasley = 弗雷德 韦斯莱
+George Weasley = 乔治 韦斯莱
+Arthur Weasley = 亚瑟 韦斯莱
+Molly Weasley = 莫丽 韦斯莱
 
-// 此区域不区分大小写，用于翻译通用概念
-通用词条
-Muggle = 麻瓜
-Wizard = 巫师
-Potion = 魔药
+// 学院专属（创始人+院长+标志性人物）
+Gryffindor:格兰芬多
+Slytherin:斯莱特林
+Ravenclaw:拉文克劳
+Hufflepuff:赫奇帕奇
+Godric Gryffindor = 戈德里克 格兰芬多（学院创始人）
+Salazar Slytherin = 萨拉查 斯莱特林（学院创始人）
+Rowena Ravenclaw = 罗伊纳 拉文克劳（学院创始人）
+Helga Hufflepuff = 赫尔加 赫奇帕奇（学院创始人）
+Minerva McGonagall = 米勒娃 麦格（格兰芬多院长/霍格沃茨副校长/变形术教授）
+Severus Snape = 西弗勒斯 斯内普（前斯莱特林院长/前魔药课教授）
+Filius Flitwick = 菲利乌斯 弗立维（拉文克劳院长/魔咒课教授）
+Pomona Sprout = 波莫娜 斯普劳特（赫奇帕奇院长/草药学教授）
+Cedric Diggory = 塞德里克 迪戈里（赫奇帕奇代表性学生）
+Penelope Clearwater = 佩内洛 克里瓦特（拉文克劳级长）
 
-// 此区域区分大小写，用于保持原文
-禁翻词条
-HP
-AO3
-Voldemort
+// 霍格沃茨课程相关人物（教授+关键讲师）
+Horace Slughorn = 霍拉斯 斯拉格霍恩（魔药课教授）
+Remus Lupin = 莱姆斯 卢平（黑魔法防御术教授/狼人）
+Rubeus Hagrid = 鲁伯 海格（保护神奇生物课教授/霍格沃茨猎场看守）
+Sybill Trelawney = 西比尔 特里劳妮（占卜课教授）
+Firenze = 费伦泽（马人，占卜课讲师）
+Mad-Eye Moody = 疯眼汉 穆迪（阿拉戈克·穆迪，黑魔法防御术教授）
+Dolores Umbridge = 多洛雷斯 乌姆里奇（黑魔法防御术教授/魔法部高级副部长）
+Cuthbert Binns = 卡斯伯特 宾斯（魔法史教授，幽灵）
+Aurora Sinistra = 奥罗拉 辛尼斯塔（天文学教授）
+Septima Vector = 西比尔 维克托（算术占卜课教授）
 
-// 匹配单复数形态
-正则表达式
-Wizard(s)? = 巫师（$1）
-Muggle(s)? = 麻瓜（$1）
+// 核心配角+反派人物
+Bellatrix Lestrange = 贝拉特里克斯 莱斯特兰奇（食死徒，伏地魔忠实追随者）
+Lucius Malfoy = 卢修斯 马尔福（食死徒，马尔福庄园主人）
+Narcissa Malfoy = 纳西莎 马尔福（马尔福夫人，贝拉特里克斯妹妹）
+Peter Pettigrew = 小矮星彼得（食死徒，化名“虫尾巴”）
+Alastor Moody = 阿拉戈克·穆迪（真实疯眼汉，傲罗）
+Xenophilius Lovegood = 谢诺菲留斯 洛夫古德（卢娜父亲，《唱唱反调》主编）
+Gilderoy Lockhart = 吉德罗 洛哈特（前黑魔法防御术教授，著名作家）
+Rufus Scrimgeour = 鲁弗斯 斯克林杰（前魔法部长）
+Cornelius Fudge = 康奈利 福吉（前魔法部长）
+Fenrir Greyback = 芬里尔 格雷伯克（狼人首领，食死徒）
+Gregory Goyle = 格雷戈里 高尔（德拉科跟班）
+Vincent Crabbe = 文森特 克拉布（德拉科跟班）
+Pansy Parkinson = 潘西 帕金森（斯莱特林女生，德拉科追随者）
+
+// 核心地点/机构（魔法界关键场景）
+Hogwarts School of Witchcraft and Wizardry:霍格沃茨魔法学校
+Hogsmeade Village:霍格莫德村
+Diagon Alley:对角巷
+Knockturn Alley:翻倒巷
+Azkaban Prison:阿兹卡班监狱
+Ministry of Magic:魔法部
+St. Mungo's Hospital for Magical Maladies and Injuries:圣芒戈魔法伤病医院
+Hogwarts Express:霍格沃茨特快列车
+Platform 9¾:九又四分之三站台
+The Burrow:陋居（韦斯莱家）
+12 Grimmauld Place:格里莫广场12号（凤凰社总部）
+Malfoy Manor:马尔福庄园
+Shell Cottage:贝壳小屋
+The Shrieking Shack:尖叫棚屋
+Room of Requirement:有求必应屋
+Chamber of Secrets:密室
+Great Hall:大礼堂
+Gryffindor Common Room:格兰芬多公共休息室
+Slytherin Dungeon:斯莱特林地牢（公共休息室）
+Ravenclaw Tower:拉文克劳塔楼
+Hufflepuff Basement:赫奇帕奇地下室
+Forbidden Forest:禁林
+Black Lake:黑湖
+Greenhouse:温室（霍格沃茨草药课教学地点）
+Clock Tower:钟楼（霍格沃茨标志性建筑）
+Dungeon:地牢（魔药课教室/斯莱特林公共休息室所在地）
+
+// 关键地点/机构细分
+Hogsmeade Station = 霍格莫德车站（霍格沃茨特快列车终点站）
+Honeydukes = 蜂蜜公爵（霍格莫德村糖果店）
+Zonko's Joke Shop = 佐科笑话店（霍格莫德村恶作剧商店）
+The Three Broomsticks = 三把扫帚酒吧（霍格莫德村知名酒吧）
+The Leaky Cauldron = 破釜酒吧（对角巷入口处麻瓜看不见的酒吧）
+Gringotts Wizarding Bank = 古灵阁巫师银行（妖精管理的魔法界银行）
+Ollivanders = 奥利凡德魔杖店（对角巷老字号魔杖店）
+Flourish and Blotts = 丽痕书店（对角巷魔法书店）
+Weasleys' Wizard Wheezes = 韦斯莱魔法把戏坊（弗雷德与乔治创办的恶作剧商店）
+St. Mungo's Hospital = 圣芒戈魔法伤病医院（简称）
+Ministry of Magic Atrium = 魔法部中庭
+The Great Hall = 霍格沃茨大礼堂
+Potion Classroom = 魔药课教室
+Transfiguration Classroom = 变形术教室
+Charms Classroom = 魔咒课教室
+Herbology Greenhouses = 草药学温室（1-7号温室）
+Care of Magical Creatures Yard = 保护神奇生物课场地
+Divination Classroom = 占卜课教室（拉文克劳塔楼顶层）
+Astronomy Tower = 霍格沃茨天文塔
+Defence Against the Dark Arts Classroom = 黑魔法防御术教室
+
+// 魂器相关（7个核心魂器+制造关联）
+Horcrux:魂器
+Slytherin Locket:斯莱特林挂坠盒
+Hufflepuff Cup:赫奇帕奇金杯
+Ravenclaw Diadem:拉文克劳冠冕
+Tom Riddle's Diary:汤姆·里德尔的日记
+Marvolo Gaunt's Ring:马沃罗·冈特的戒指
+Nagini:纳吉尼（伏地魔的蛇形魂器）
+Horcrux Creation:魂器制造术（分裂灵魂制作魂器的黑魔法）
+
+// 死亡圣器相关
+Deathly Hallows:死亡圣器
+Elder Wand:老魔杖（接骨木魔杖）
+Resurrection Stone:复活石
+Invisibility Cloak of the Peverells:佩弗利尔家的隐形衣
+
+// 通用词条（不区分大小写，通用概念/魔法/物品，全形态匹配）
+// 人群分类
+Muggle:麻瓜（非魔法人群）
+Squib:哑炮（巫师家庭无魔法能力者）
+Wizard:巫师（男性魔法使用者）
+Witch:女巫（女性魔法使用者）
+Muggle-born:麻瓜出身（巫师）
+Pure-blood:纯血统（巫师）
+Half-blood:混血（巫师）
+Death Eater:食死徒（伏地魔追随者）
+Order of the Phoenix:凤凰社（对抗伏地魔的秘密组织）
+Auror:傲罗（魔法部对抗黑魔法的精英巫师）
+Prefect:级长（霍格沃茨学生干部）
+Head Boy/Girl:男女学生会主席
+Professor:教授（霍格沃茨教师）
+House-elf:家养小精灵（服务巫师家庭的魔法生物）
+Goblin:妖精（古灵阁银行管理者）
+Centaur:马人（上身人形下身马形，擅长占卜）
+Werewolf:狼人（人类在满月时变身的魔法生物）
+Vampire:吸血鬼（吸食血液的魔法生物）
+Dementor:摄魂怪（阿兹卡班守卫/吸食快乐与灵魂）
+Boggart:博格特（变形为最恐惧的事物）
+Doxy:狐媚子（有害魔法生物）
+Acromantula:八眼巨蛛（巨型有毒蜘蛛）
+
+// 霍格沃茨课程术语（课程名称+核心内容）
+Potions:魔药课（学习配制各类魔药的课程）
+Defence Against the Dark Arts:黑魔法防御术（抵御黑魔法的课程）
+Transfiguration:变形术（将物体/生物变形的课程）
+Charms:魔咒课（学习各类实用魔咒的课程）
+Herbology:草药学（研究魔法植物特性与用法的课程）
+Care of Magical Creatures:保护神奇生物课（了解/照料魔法生物的课程）
+Divination:占卜课（预测未来的课程，含水晶球、茶叶渣占卜等）
+Astronomy:天文学（研究星象与魔法关联的课程）
+History of Magic:魔法史（学习魔法界历史事件的课程）
+Arithmancy:算术占卜课（通过数字占卜未来的课程）
+Study of Ancient Runes:古代如尼文研究（解读古代魔法符文的课程）
+Muggle Studies:麻瓜研究（了解麻瓜生活与文化的课程）
+Flying Lessons:飞行课（霍格沃茨一年级基础课程，学习使用飞天扫帚）
+Apparition Lessons:幻影移形课（高年级选修课程，学习瞬间移动）
+
+// 霍格沃茨校规术语（核心校规+处罚/权限相关）
+School Rules:霍格沃茨校规（学生必须遵守的行为准则）
+Curfew:宵禁（规定学生夜间必须返回公共休息室的时间，违者受罚）
+Forbidden Area:禁地（禁止学生进入的区域，如禁林、三楼走廊）
+No Magic in Corridors:走廊禁施魔法（非课程时间禁止在走廊随意使用魔法）
+Uniform Requirement:校服要求（必须穿着黑色长袍、佩戴学院徽章上课）
+Prefect Privileges:级长特权（级长可使用级长浴室、管理低年级学生秩序）
+Head Boy/Girl Authority:学生会主席权限（协助教授管理学生、组织活动）
+Detention:留堂处罚（违反校规的常见处罚，需完成指定任务）
+Suspension:停学处分（严重违反校规的处罚，暂停入学资格）
+Expulsion:开除处分（最严重处罚，如使用不可饶恕咒、打开密室）
+House Points:学院分（表现优秀加分、违反校规扣分，影响学院杯归属）
+House Cup:学院杯（年度优秀学院奖项，根据学院分排名评选）
+Quidditch Ban:魁地奇禁赛（违反校规者可能被禁止参加魁地奇比赛）
+Magic Restriction:魔法限制（一年级学生禁止在校外使用魔法）
+Visiting Hogsmeade Permission:霍格莫德访问许可（三年级及以上学生需家长签字同意方可前往）
+
+// 魔法界节日/习俗术语（传统节日+特有习俗）
+// 核心节日
+Halloween at Hogwarts:霍格沃茨万圣节（10月31日，大礼堂举办晚宴，有南瓜装饰和魔法表演）
+Christmas at Hogwarts:霍格沃茨圣诞节（12月25日，学生可留校过节，交换礼物、享用圣诞大餐）
+Yule Ball:圣诞舞会（三强争霸赛期间举办的正式舞会，17岁以上学生可参加）
+Easter Holiday:复活节假期（春季假期，学生可回家或留校，学校举办小型庆祝活动）
+End-of-Term Feast:期末宴会（学年结束时举办的晚宴，宣布学院杯归属、表彰优秀学生）
+Start-of-Term Feast:开学宴会（学年开始时举办的晚宴，新生分院、介绍学校规则）
+
+// 特有习俗
+Sorting Ceremony:分院仪式（新生入学时由分院帽分配学院的仪式，在开学宴会进行）
+Wand Choosing:选魔杖仪式（巫师购买魔杖的过程，魔杖会主动选择适合的主人）
+Apparition Test:幻影移形考试（17岁巫师参加的瞬间移动资格考试，通过者获合法幻影移形权限）
+Wedding Tradition:巫师婚礼习俗（仪式包含魔法祝福，新人交换魔法信物，宾客可使用魔法庆祝）
+Funeral Rites:巫师葬礼仪式（部分巫师采用火化，部分会有魔法生物送行，如凤凰鸣叫哀悼）
+House-Elf Liberation:家养小精灵解放习俗（给予家养小精灵衣物即可使其获得自由）
+Gringotts Vault Access:古灵阁金库访问习俗（巫师需提供魔杖和身份验证方可进入自己的金库）
+Quidditch World Cup:魁地奇世界杯（每四年举办一次的全球魁地奇赛事，巫师界重大盛事）
+Magic Duelling:魔法决斗习俗（巫师间解决冲突的传统方式，需遵守公平决斗规则，有裁判见证）
+Memorial for Fallen Wizards:巫师阵亡纪念（纪念对抗黑魔法牺牲的巫师，如霍格沃茨战争纪念碑）
+
+// 魔法生物细分词条（按危险等级/类别分类）
+// 危险等级X（无害）
+Pygmy Puff:侏儒蒲（韦斯莱魔法把戏坊售卖的迷你魔法生物，毛茸茸无攻击性）
+House-elf:家养小精灵（服务巫师家庭的魔法生物，可自行apparate）
+Phoenix:凤凰（象征重生的魔法生物，眼泪能治愈伤口，代表生物福克斯）
+Owl:猫头鹰（巫师界常用信使，常见品种有雪鸮、雕鸮等）
+Toad:蟾蜍（部分学生的宠物，如纳威的宠物蟾蜍Trevor）
+Cat:猫（巫师常见宠物，如赫敏的猫克鲁克山）
+Rat:老鼠（巫师常见宠物，如罗恩的宠物斑斑）
+
+// 危险等级XX（无害但麻烦）
+Doxy:狐媚子（小型带翅膀的有害生物，群体攻击，需用驱虫咒驱赶）
+Bowtruckle:护树罗锅（栖息在树上的小型生物，守护树木，可用于制作魔杖核心）
+Cornish Pixie:康沃尔郡小精灵（调皮捣蛋的小型生物，喜欢恶作剧）
+Gnomes:地精（栖息在花园的生物，会破坏植物，需拖拽驱逐）
+
+// 危险等级XXX（有能力伤人）
+Acromantula:八眼巨蛛（巨型蜘蛛，有毒液，能说话，栖息于禁林）
+Centaur:马人（上身人形下身马形，擅长占卜，栖息于禁林，不喜被人类冒犯）
+Hippogriff:鹰头马身有翼兽（鹰头马身的魔法生物，需先鞠躬表示尊重才能靠近，代表生物巴克比克）
+Thestral:夜骐（只有见过死亡的人才能看见，可作为飞行坐骑，拉霍格沃茨马车）
+Werewolf:狼人（人类在满月时变身的魔法生物，变身时失去理智，代表人物莱姆斯·卢平）
+
+// 危险等级XXXX（危险，需专业巫师处理）
+Basilisk:蛇怪（巨型毒蛇，目光接触即死，毒液有强腐蚀性，栖息于密室）
+Griffin:狮身鹰首兽（狮子身体鹰头的魔法生物，攻击性强，象征力量）
+Manticore:曼提柯尔（狮身人面蝎尾的魔法生物，毒液致命，声音悦耳但有迷惑性）
+Chimera:奇美拉（狮身羊头蛇尾的魔法生物，极度危险，难以驯服）
+
+// 危险等级XXXXX（极度危险，无解）
+Dementor:摄魂怪（吸食人类快乐与灵魂的生物，阿兹卡班守卫，守护神咒是唯一抵御方式）
+Boggart:博格特（变形为人类最恐惧的事物，需用滑稽滑稽咒使其变形）
+Lethifold:阴尸（伏地魔用黑魔法复活的尸体，没有自主意识，听从命令）
+Vampire:吸血鬼（吸食血液的魔法生物，如霍格沃茨教授斯洛博恩）
+Troll:巨怪（巨型人形生物，头脑简单力气大，分山地巨怪、森林巨怪、河流巨怪）
+
+// 核心魔法（按功能分类）
+// 不可饶恕咒
+Unforgivable Curses:不可饶恕咒（三大禁咒统称）
+Avada Kedavra:阿瓦达索命（杀戮咒，不可饶恕咒之首）
+Crucio:钻心咒（折磨咒，不可饶恕咒）
+Imperio:夺魂咒（控制咒，不可饶恕咒）
+
+// 基础实用咒
+Wingardium Leviosa:羽加迪姆 勒维奥萨（悬浮咒）
+Alohomora:阿拉霍洞开（开锁咒）
+Lumos:荧光闪烁（照明咒）
+Nox:诺克斯（熄灭咒，对应荧光闪烁）
+Oculus Reparo:奥克索修复咒（修复眼镜/物品）
+Reparo:修复如初（通用修复咒）
+Scourgify:清理一新（清洁咒）
+Expelliarmus:除你武器（缴械咒，核心防御咒）
+Expecto Patronum:呼神护卫（守护神咒，抵御摄魂怪）
+Patronus Charm:守护神咒（同Expecto Patronum）
+
+// 攻击/防御咒
+Protego:盔甲护身（防御咒）
+Protego Maxima:终极盔甲护身（高级防御咒）
+Expulso:爆破咒（攻击型咒语）
+Reductor Curse:粉碎咒（破坏物品咒）
+Stupefy:昏昏倒地（昏迷咒）
+Petrificus Totalus:统统石化（全身束缚咒）
+Locomotor:移动咒（控制物体移动）
+Engorgio:速速变大（放大咒）
+Reducio:速速缩小（缩小咒）
+
+// 特殊能力/咒语
+Parseltongue:蛇佬腔（与蛇对话的能力）
+Legilimency:摄神取念（读取他人思想）
+Occlumency:大脑封闭术（抵御摄神取念）
+Apparition:幻影移形（瞬间移动能力）
+Disapparition:幻影显形（同Apparition）
+Portkey:门钥匙（瞬间传送物品）
+Floo Powder:飞路粉（通过壁炉传送的魔法粉末）
+
+// 魔法细分（按功能补充）
+// 治愈类魔法
+Episkey:愈合如初（治疗轻微伤口的咒语）
+Ferula:绷带咒（生成绷带包扎伤口）
+Skele-Gro:生骨灵（治疗骨折的魔药）
+Dittany:白鲜（魔法植物，其汁液可快速愈合伤口）
+Wound-Cleaning Charm:清洁伤口咒（清理伤口污物的咒语）
+
+// 控制类魔法
+Impedimenta:障碍重重（阻止敌人靠近的咒语）
+Petrificus Totalus:统统石化（全身束缚咒）
+Locomotor Mortis:腿立僵停死（使对方腿部僵硬的咒语）
+Stupefy:昏昏倒地（昏迷咒）
+Confundo:混淆视听（使对方混乱的咒语）
+Imperio:夺魂咒（不可饶恕咒，完全控制他人）
+
+// 攻击类魔法
+Expulso:爆破咒（产生爆炸的攻击咒语）
+Reducto:粉身碎骨（粉碎物体/攻击的咒语）
+Confringo:火焰熊熊（发射火焰的攻击咒语）
+Incendio:火焰咒（点燃物体的基础咒语）
+Sectumsempra:神锋无影（切割类攻击咒语，斯内普发明）
+Diffindo:四分五裂（切割物体的咒语）
+
+// 防御类魔法
+Protego:盔甲护身（基础防御咒）
+Protego Horribilis:强效盔甲护身（抵御黑魔法的高级防御咒）
+Shield Charm:盾牌咒（生成魔法盾牌的防御咒）
+Disillusionment Charm:幻身咒（使自身隐形或融入环境）
+Fidelius Charm:赤胆忠心咒（保护秘密，需保密人）
+Muffliato:闭耳塞听（使他人听不见特定对话的咒语）
+Repello Muggletum:麻瓜驱逐咒（让麻瓜远离特定区域）
+
+// 魔法物品/魔药
+Wand:魔杖（魔法使用者的核心工具）
+Potion:魔药
+Polyjuice Potion:复方汤剂（变身他人的魔药）
+Felix Felicis:福灵剂（幸运魔药）
+Wolfsbane Potion:狼人药剂（狼人变身时保持理智）
+Veritaserum:吐真剂（强制说出真相的魔药）
+Amortentia:迷情药（最强爱情魔药，非真实爱情）
+Draught of Living Death:生死水（深度睡眠魔药）
+Pensive:冥想盆（储存/查看记忆的魔法物品）
+Time-Turner:时间转换器（逆转时间的物品）
+Mirror of Erised:厄里斯魔镜（显示内心最深渴望的镜子）
+Sorting Hat:分院帽（霍格沃茨分院工具）
+Gryffindor Sword:格兰芬多宝剑（格兰芬多学院遗物）
+Invisibility Cloak:隐形衣（遮挡身形的魔法衣物）
+Dark Mark:黑魔标记（食死徒的标记，召唤伏地魔）
+Dark Magic:黑魔法
+Light Magic:白魔法（正义魔法）
+Magic Wand:魔杖（同Wand，完整表述）
+Spell:咒语（魔法的统称）
+Cauldron:坩埚（魔药课必备工具）
+Potion Kit:魔药工具包（含坩埚、药杵等魔药课工具）
+Wand Core:魔杖核心（魔杖内部的魔法生物材料）
+Spellbook:咒语书（记录各类咒语的书籍）
+Herbology Kit:草药学工具包（含剪刀、铲子等草药课工具）
+Crystal Ball:水晶球（占卜课道具）
+Tea Leaf Reading Set:茶叶渣占卜套装（占卜课道具）
+Arithmancy Chart:算术占卜图表（算术占卜课工具）
+Ancient Rune Stone:古代如尼文石碑（古代如尼文研究课教具）
+Flying Broomstick:飞天扫帚（飞行课/魁地奇必备工具）
+Quidditch Uniform:魁地奇队服（各学院专属队服）
+School Robes:霍格沃茨校服（黑色长袍）
+House Crest:学院徽章（各学院专属标识）
+
+// 魔法物品细分
+Howler:吼叫信（会大声朗读内容的魔法信件）
+Pensieve:冥想盆（储存和查看记忆的魔法器具）
+Time-Turner:时间转换器（逆转时间的魔法物品）
+Mirror of Erised:厄里斯魔镜（显示内心最深渴望的镜子）
+Sorting Hat:分院帽（霍格沃茨分院工具，能说话）
+Marauder's Map:活点地图（显示霍格沃茨内人员位置的地图）
+Invisibility Cloak:隐形衣（遮挡身形的魔法衣物）
+Elder Wand:老魔杖（死亡圣器之一，接骨木魔杖）
+Resurrection Stone:复活石（死亡圣器之一，可召唤亡灵）
+Horcrux:魂器（分裂灵魂储存的黑魔法物品）
+Slytherin's Locket:斯莱特林挂坠盒（魂器）
+Hufflepuff's Cup:赫奇帕奇金杯（魂器）
+Ravenclaw's Diadem:拉文克劳冠冕（魂器）
+Tom Riddle's Diary:汤姆·里德尔的日记（魂器）
+Marvolo Gaunt's Ring:马沃罗·冈特的戒指（魂器）
+Nagini:纳吉尼（伏地魔的蛇形魂器）
+Goblet of Fire:火焰杯（三强争霸赛关键道具）
+Portkey:门钥匙（瞬间传送的魔法物品）
+Floo Powder:飞路粉（通过壁炉传送的魔法粉末）
+Wand:魔杖（魔法核心工具，不同木材+核心对应不同特性）
+Phoenix Feather:凤凰羽毛（魔杖核心材料）
+Dragon Heartstring:龙心弦（魔杖核心材料）
+Unicorn Hair:独角兽毛（魔杖核心材料）
+
+// 巫师界组织/身份术语
+Auror Office:傲罗办公室（魔法部对抗黑魔法的部门）
+Wizengamot:威森加摩（魔法界最高法庭）
+Order of the Phoenix:凤凰社（对抗伏地魔的秘密组织）
+Death Eaters:食死徒（伏地魔的追随者，佩戴黑魔标记）
+Dumbledore's Army:邓布利多军（哈利创办的防御术学习小组，简称DA）
+Ministry of Magic:魔法部（巫师界管理机构）
+International Confederation of Wizards:国际巫师联合会（简称ICW）
+Goblin Liaison Office:妖精联络处（魔法部与古灵阁妖精的联络部门）
+Misuse of Muggle Artefacts Office:禁止滥用麻瓜物品司（魔法部下属部门）
+Auror:傲罗（魔法部精英黑魔法猎人）
+Unspeakable:缄默人（神秘事务司职员）
+Obliviator:记忆注销员（消除麻瓜魔法记忆的巫师）
+Prefect:级长（霍格沃茨学生干部）
+Head Boy/Girl:男女学生会主席（霍格沃茨最高学生干部）
+House-Elf:家养小精灵（服务巫师家庭的魔法生物）
+Goblin:妖精（古灵阁银行管理者，擅长铸造）
+Centaur:马人（栖息于禁林，擅长占卜）
+Werewolf:狼人（满月变身的魔法生物）
+Vampire:吸血鬼（吸食血液的魔法生物）
+Muggle-born:麻瓜出身巫师（父母均为麻瓜）
+Pure-blood:纯血统巫师（无麻瓜血统）
+Half-blood:混血巫师（有麻瓜与巫师血统）
+Squib:哑炮（巫师家庭无魔法能力者）
+
+// 魁地奇专属（球员位置+道具+规则术语）
+Quidditch:魁地奇（巫师界核心体育运动）
+Chaser:追球手（魁地奇球员，得分主力）
+Seeker:找球手（寻找金色飞贼，决定比赛胜负）
+Beater:击球手（用球棒击打游走球，保护队友）
+Keeper:守门员（守护球门，阻止对方得分）
+Golden Snitch:金色飞贼（魁地奇核心道具，得150分）
+Quaffle:鬼飞球（红色球，追球手投掷得分，每次10分）
+Bludger:游走球（黑色球，自动攻击球员，需击球手击打）
+Quidditch Pitch:魁地奇球场
+Goal Hoop:魁地奇球门（每个球队3个）
+Quidditch Cup:魁地奇杯（霍格沃茨魁地奇联赛冠军奖杯）
+Flying Broomstick:飞天扫帚（魁地奇球员飞行工具）
+Nimbus 2000:光轮2000（经典飞天扫帚型号）
+Firebolt:火弩箭（顶级飞天扫帚型号）
+Wronski Feint:朗斯基假动作（找球手常用战术）
+Snitch Catch:抓住飞贼（结束比赛并得150分）
+
+// 魁地奇细分术语
+Quidditch Team:魁地奇球队（各学院专属球队）
+Gryffindor Quidditch Team:格兰芬多魁地奇球队
+Slytherin Quidditch Team:斯莱特林魁地奇球队
+Ravenclaw Quidditch Team:拉文克劳魁地奇球队
+Hufflepuff Quidditch Team:赫奇帕奇魁地奇球队
+Quidditch Pitch:魁地奇球场（椭圆形场地，带球门）
+Goal Hoop:魁地奇球门（每队3个，高15英尺）
+Quaffle:鬼飞球（红色，追球手投掷得分，每次10分）
+Bludger:游走球（黑色，2个，自动攻击球员）
+Golden Snitch:金色飞贼（金色，有翅膀，找球手捕捉得150分，比赛结束）
+Flying Broomstick:飞天扫帚（魁地奇必备工具）
+Nimbus 2001:光轮2001（升级款飞天扫帚型号）
+Comet 260:彗星260（入门级飞天扫帚型号）
+Cleansweep Seven:横扫七星（平价飞天扫帚型号）
+Wronski Feint:朗斯基假动作（找球手战术，假装俯冲）
+Porskoff Ploy:波科夫战术（追球手战术，迷惑对方守门员）
+Vollbracht:沃尔布拉克战术（击球手战术，双重击球）
+Snitch Catch:捕捉飞贼（结束魁地奇比赛的关键动作）
+Quidditch Cup:魁地奇杯（霍格沃茨魁地奇联赛冠军奖杯）
+
+// 魔法部职位术语（按部门+职级分类）
+Minister for Magic:魔法部长（魔法部最高长官）
+Ministerial Advisor:部长顾问
+Department of Magical Law Enforcement:魔法法律执行司
+Head of the Department of Magical Law Enforcement:魔法法律执行司司长
+Auror Office:傲罗办公室
+Head Auror:首席傲罗
+Magical Law Enforcement Squad:魔法法律执行队
+Department of Magical Accidents and Catastrophes:魔法意外和灾害司
+Obliviator Headquarters:记忆注销员总部
+Obliviator:记忆注销员（消除麻瓜魔法记忆）
+Department for the Regulation and Control of Magical Creatures:魔法生物管理控制司
+Beast Division:野兽分部
+Being Division:人类分部
+Spirit Division:精灵分部
+Department of International Magical Cooperation:国际魔法合作司
+Head of International Magical Cooperation:国际魔法合作司司长
+Department of Magical Transportation:魔法交通司
+Portkey Office:门钥匙办公室
+Floo Network Authority:飞路网管理局
+Department of Mysteries:神秘事务司（魔法部最高机密部门）
+Unspeakable:缄默人（神秘事务司职员，禁止透露工作内容）
+Wizengamot:威森加摩（魔法界最高法庭）
+Chief Warlock of the Wizengamot:威森加摩首席巫师
+
+// 禁翻词条（区分大小写，保留原文标识，避免误译）
+HP,AO3
+PS（Philosopher's Stone）, CoS（Chamber of Secrets）, PoA（Prisoner of Azkaban）
+GoF（Goblet of Fire）, OOTP（Order of the Phoenix）, HBP（Half-Blood Prince）, DH（Deathly Hallows）
+Voldemort, Dumbledore, Hogwarts, Gryffindor, Slytherin, Ravenclaw, Hufflepuff
+MOM（Ministry of Magic）, St. Mungo's, Hogsmeade, Diagon Alley, Knockturn Alley
+Nimbus 2000, Firebolt, Comet 260, Marauder's Map
+OOTP（Order of the Phoenix）, DE（Death Eater）
+Fawkes, Buckbeak, Trevor, Crookshanks, Scabbers, Aragog
+Potions, Defence Against the Dark Arts, Transfiguration, Charms, Herbology
+Phoenix, Hippogriff, Thestral, Basilisk, Dementor, Boggart
+Bellatrix Lestrange, Lucius Malfoy, Narcissa Malfoy, Peter Pettigrew
+Gilderoy Lockhart, Rufus Scrimgeour, Cornelius Fudge, Fenrir Greyback
+Honeydukes, Zonko's Joke Shop, The Three Broomsticks, The Leaky Cauldron
+Gringotts Wizarding Bank, Ollivanders, Flourish and Blotts, Weasleys' Wizard Wheezes
+Nimbus 2001, Cleansweep Seven, Howler, Pensieve, Marauder's Map
+DA（Dumbledore's Army）, ICW（International Confederation of Wizards）, Wizengamot
+Quaffle, Bludger, Golden Snitch, Firebolt, Comet 260, Cleansweep Seven
+House Cup, Quidditch World Cup, Yule Ball, Sorting Ceremony, Wand Choosing
+Halloween at Hogwarts, Christmas at Hogwarts
+
+// 正则表达式（复杂形态匹配，覆盖单复数/变形/组合词）
+// 单复数自动适配
+Wizard(s)?:巫师（$1）
+Witch(es)?:女巫（$1）
+Muggle(s)?:麻瓜（$1）
+Squib(s)?:哑炮（$1）
+Death Eater(s)?:食死徒（$1）
+Dementor(s)?:摄魂怪（$1）
+Horcrux(es)?:魂器（$1）
+Potion(s)?:魔药（$1）
+Wand(s)?:魔杖（$1）
+Spell(s)?:咒语（$1）
+Chaser(s)?:追球手（$1）
+Seeker(s)?:找球手（$1）
+Beater(s)?:击球手（$1）
+Keeper(s)?:守门员（$1）
+Bludger(s)?:游走球（$1）
+Pygmy Puff(s)?:侏儒蒲（$1）
+Bowtruckle(s)?:护树罗锅（$1）
+Hippogriff(s)?:鹰头马身有翼兽（$1）
+Thestral(s)?:夜骐（$1）
+Basilisk(s)?:蛇怪（$1）
+Troll(s)?:巨怪（$1）
+House-elf(es)?:家养小精灵（$1）
+Auror(s)?:傲罗（$1）
+Unspeakable(s)?:缄默人（$1）
+Obliviator(s)?:记忆注销员（$1）
+Goblin(s)?:妖精（$1）
+Centaur(s)?:马人（$1）
+Werewolf(ves)?:狼人（$1）
+Vampire(s)?:吸血鬼（$1）
+Howler(s)?:吼叫信（$1）
+Portkey(s)?:门钥匙（$1）
+House Point(s)?:学院分（$1）
+Detention(s)?:留堂处罚（$1）
+School Rule(s)?:校规（$1）
+Quidditch World Cup(s)?:魁地奇世界杯（$1）
+Yule Ball(s)?:圣诞舞会（$1）
+Sorting Ceremony(ies)?:分院仪式（$1）
+
+// 形容词/副词变形适配
+Wizarding(ly)? :巫师界的（$1）/巫师般地（$1）
+Magical(ly)? :魔法的（$1）/魔法般地（$1）
+Muggle(ish)? :麻瓜似的（$1）
+Dark(ly)? :黑暗的（$1）/黑暗地（$1）
+Pure-blood(ed)? :纯血统的（$1）
+Half-blood(ed)? :混血的（$1）
+Muggle-born(ed)? :麻瓜出身的（$1）
+Wand Choosing(ly)?:选魔杖仪式（$1）
+
+// 德语/复合词特殊形态
+Wachm(a|ä)nn(er)?:守卫（$1$2）
+Quidditch(er)?(s)?:魁地奇球员（$1$2）
+Goblin(s)?(oid)? :妖精（$1）/妖精似的（$2）
+Centaur(s)?(ine)? :马人（$1）/马人相关的（$2）
+
+// 组合词拆分匹配
+(Hogwarts|School of Witchcraft and Wizardry) :霍格沃茨魔法学校
+(Deathly Hallows|Elder Wand|Resurrection Stone|Invisibility Cloak) :死亡圣器
+(Marauder's Map|Map of Marauders) :活点地图
+(Potion|Potions) (Class|Lesson)?:魔药课（$2）
+(Defence|Defense) Against the Dark Arts (Class|Lesson)?:黑魔法防御术（$3）
+(Transfiguration|Charms|Herbology) (Class|Lesson)?:$1课（$2）
+(Cauldron|Potion Kit|Spellbook) :$1
+(Wand Core|Flying Broomstick|Quidditch Uniform) :$1
+(Forbidden Forest|Black Lake|Greenhouse) :$1
+(Gringotts|Wizarding Bank) :古灵阁巫师银行
+(Elder Wand|Wand of Destiny) :老魔杖
+(Resurrection Stone|Stone of Resurrection) :复活石
+(Invisibility Cloak|Cloak of Invisibility) :隐形衣
+
+// 魁地奇相关变形匹配
+Quidditch (Team|Pitch|Cup)?:魁地奇$1（$2）
+Golden Snitch(es)?:金色飞贼（$1）
+Quaffle(s)?:鬼飞球（$1）
+Bludger(s)?:游走球（$1）
+Flying Broomstick(s)?:飞天扫帚（$1）
+
+// 组织/身份变形匹配
+Order of the Phoenix (Member(s))?:凤凰社成员（$1）
+Death Eater(s)?:食死徒（$1）
+Dumbledore's Army (Member(s))?:邓布利多军成员（$1）
+Wizengamot (Member(s))?:威森加摩成员（$1）
