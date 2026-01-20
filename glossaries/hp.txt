@@ -1,9 +1,26 @@
-版本号:1.0.4
-维护者:HP汉化组
+版本号：1.0.1
+维护者：V-Lipset
+更新时间：2025-09-22
 
-// 词条区
-Harry Potter:哈利·波特
-Hogwarts:霍格沃茨
+// 此区域区分大小写，用于翻译人名等专有名词
+词条
+Harry Potter = 哈利 波特
+Severus Snape = 西弗勒斯 斯内普
+Hogwarts = 霍格沃茨
 
-// 通用词条区
-Muggle:麻瓜
+// 此区域不区分大小写，用于翻译通用概念
+通用词条
+Muggle = 麻瓜
+Wizard = 巫师
+Potion = 魔药
+
+// 此区域区分大小写，用于保持原文
+禁翻词条
+HP
+AO3
+Voldemort
+
+// 匹配单复数形态
+正则表达式
+Wizard(s)? = 巫师（$1）
+Muggle(s)? = 麻瓜（$1）
