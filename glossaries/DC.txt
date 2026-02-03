@@ -1,0 +1,111 @@
+[span_1](start_span)// 元数据区[span_1](end_span)
+版本号: 1.1.0
+维护者: Gemini
+更新时间: 2026-02-03
+
+[span_2](start_span)// 词条区：区分大小写，处理人名[span_2](end_span)
+词条
+
+// --- 蝙蝠家族 (Bat-Family) ---
+Bruce Wayne = 布鲁斯·韦恩
+Dick Grayson = 迪克·格雷森
+Jason Todd = 杰森·托德
+Tim Drake = 提姆·德雷克
+Damian Wayne = 达米安·韦恩
+Barbara Gordon = 芭芭拉·戈登
+Cassandra Cain = 卡珊德拉·该隐
+Stephanie Brown = 斯蒂芬妮·布朗
+Alfred Pennyworth = 阿尔弗雷德·潘尼沃斯
+Kate Kane = 凯特·凯恩
+
+// --- 超人家族 (Superman-Family) ---
+Clark Kent = 克拉克·肯特
+Kara Zor-El = 卡拉·佐-艾尔
+Kon-El = 康-艾尔
+Jonathan Kent = 乔纳森·肯特
+Lois Lane = 路易斯·莱恩
+
+// --- 少年泰坦与法外者 (Titans & Outlaws) ---
+Koriand'r = 柯莉安妲
+Rachel Roth = 瑞秋·罗斯
+Garfield Logan = 加菲尔德·罗根
+Victor Stone = 维克多·斯通
+Donna Troy = 唐娜·特洛伊
+Roy Harper = 罗伊·哈珀
+Artemis of Bana-Mighdall = 凡娜-米格道尔的阿尔忒弥斯
+
+// --- 宿敌 (Enemies) ---
+Lex Luthor = 莱克斯·卢瑟
+Slade Wilson = 斯莱德·威尔逊
+Harleen Quinzel = 哈琳·奎泽尔
+Pamela Isley = 帕米拉·艾斯利
+Edward Nygma = 爱德华·尼格玛
+Oswald Cobblepot = 奥斯瓦尔德·科波特
+Harvey Dent = 哈维·丹特
+Ra's al Ghul = 雷霄古
+Talia al Ghul = 塔莉亚·艾尔·古尔
+
+[span_3](start_span)// 通用词条区：不区分大小写，处理代号、地点与武器[span_3](end_span)
+通用词条
+
+// --- 英雄代号 ---
+Nightwing: 夜翼
+Red Hood: 红头罩
+Red Robin: 红罗宾
+Batgirl: 蝙蝠女
+Oracle: 神谕
+Batwoman: 蝙蝠女侠
+Supergirl: 超女
+Superboy: 超级小子
+Starfire: 星火
+Raven: 渡鸦
+Beast Boy: 野兽小子
+Cyborg: 钢骨
+Wonder Girl: 神奇少女
+Speedy: 飞毛腿
+Arsenal: 军火库
+
+// --- 组织名称 ---
+Bat-family: 蝙蝠家族
+Superman-family: 超人家族
+Teen Titans: 少年泰坦
+The Outlaws: 法外者
+Suicide Squad: 自杀小队
+League of Assassins: 刺客联盟
+H.I.V.E.: 蜂巢
+
+// --- 宿敌代号 ---
+Deathstroke: 丧钟
+The Joker: 小丑
+Harley Quinn: 哈莉·奎茵
+Poison Ivy: 毒藤女
+Riddler: 谜语人
+Penguin: 企鹅人
+Two-Face: 双面人
+Scarecrow: 稻草人
+Bane: 贝恩
+Blackfire: 黑火
+Trigon: 三宫
+Brainiac: 布莱尼亚克
+Doomsday: 毁灭日
+Bizarro: 比扎罗
+
+// --- 武器与关键物品 ---
+Batarang: 蝙蝠镖
+Grappling Hook: 抓钩枪
+God Killer: 弑神者
+Mother Box: 母盒
+Kryptonite: 氪石
+
+[span_4](start_span)// 禁翻词条区[span_4](end_span)
+禁翻词条
+DC
+DCEU
+GCPD
+TITANS
+S.T.A.R. Labs
+
+[span_5](start_span)// 正则表达式区[span_5](end_span)
+正则表达式
+[span_6](start_span)// 匹配氪星相关的复数形式[span_6](end_span)
+Krypto(nian)?s?: 氪星人
