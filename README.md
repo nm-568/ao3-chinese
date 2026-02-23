@@ -9,11 +9,11 @@ QQ 频道：[AO3 汉化插件](https://pd.qq.com/s/h5cf7c1sd?b=9)
 - **界面汉化**
   - 中文化 AO3 界面，覆盖静态文本、动态数据和各类提示信息。
 - **可配置项**
-  - 两种显示模式：双语对照/仅译文。
-  - 多种翻译服务：内置 OpenAI、DeepSeek 等 10+ AI 翻译服务，支持自定义 API 接口。
+  - 接入 OpenAI、DeepSeek 等多种 AI 服务，支持自定义 API 接口。
+  - 显示模式：双语对照/仅译文。
   - 术语表功能：支持设置术语表规则，精准翻译或禁翻人名、地名等专有术语。
   - 作品屏蔽：支持设置作品屏蔽规则，隐藏不想看到的作品。
-  - 文章格式调整：可方便地调整文章排版，在大屏上享有更舒适的阅读体验。
+  - 文章格式调整：支持调整文章排版，在大屏上享有更舒适的阅读体验。
 
 ### 🔧 安装
 
@@ -42,7 +42,7 @@ QQ 频道：[AO3 汉化插件](https://pd.qq.com/s/h5cf7c1sd?b=9)
   - [本地术语表](https://v-lipset.github.io/docs/feat/local)
   - [作品屏蔽功能](https://v-lipset.github.io/docs/feat/block)
   - 在线术语表
-    - [在线术语库](https://github.com/V-Lipset/ao3-chinese/wiki/%E5%9C%A8%E7%BA%BF%E6%9C%AF%E8%AF%AD%E8%A1%A8)
+    - [在线术语库](https://github.com/V-Lipset/ao3-chinese/wiki/在线术语库)
     - [术语表编写指南](https://v-lipset.github.io/docs/feat/online/write)
     - [创建在线术语表](https://v-lipset.github.io/docs/feat/online/create)
     - [分享你的术语表](https://v-lipset.github.io/docs/feat/online/share)
